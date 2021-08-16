@@ -6,45 +6,54 @@
 
 # TrueCoders Node 4
 
-Refer to this folder for markdown notes, class walkthroughs, and resources
+Refer to this folder for markdown lectures, notes, class walkthroughs, and resources.
 
-## Table of Contents
+## Notes
 
-| Sections                                                                                  |
-| ----------------------------------------------------------------------------------------- |
-| [HTML Intro](./lectures/html/html-intro.md)                                               |
-| [HTML Divs, Forms, and Tables](./lectures/html/html-divs-forms-and-tables.md)             |
-| [CSS Intro](./lectures/html/css-intro.md)                                                 |
-| [CSS Flexbox and Grid](./lectures/html/css-flexbox-and-grid.md)                           |
-| [JavaScript Intro](./lectures/html/javascript-introduction.md)                            |
-| [JavaScript Operators](./lectures/html/javascript-operators.md)                           |
-| [JavaScript Control Flow](./lectures/html/javascript-selection-statements.md)             |
-| [JavaScript Loops](./lectures/html/javascript-loops.md)                                   |
-| [JavaScript Functions](./lectures/html/javascript-functions.md)                           |
-| [JavaScript Objects](./lectures/html/javascript-objects.md)                               |
-| [JavaScript Higher Order Functions](./lectures/html/javascript-higher-order-functions.md) |
-| [JavaScript Object-Oriented Programming](./lectures/html/javascript-oop.md)               |
-| [JavaScript DOM](./lectures/html/javascript-dom.md)                                       |
-| [JavaScript Promises](./lectures/html/javascript-promises.md)                             |
-| [JavaScript Fetch Api](./lectures/html/javascript-apis.md)                                |
-| [JavaScript Error Handling](./lectures/html/javascript-error-handling.md)                 |
-| [JavaScript Frontend Tools](./lectures/html/javascript-npm-yarn-webpack.md)               |
-| [JavaScript ES6 Modules](./lectures/html/javascript-es6-modules.md)                       |
-| [React Intro](./lectures/html/react-intro.md)                                             |
-| [React State and Props](./lectures/html/react-state-props.md)                             |
-| [React Lifecycle Methods](./lectures/html/lifecycle-methods.md)                           |
-| [React Router](./lectures/html/react-router.md)                                           |
-| [React Hooks](./lectures/html/react-hooks.md)                                             |
-| [React Router Hooks](./lectures/html/react-router-hooks.md)                               |
-| [SQL Intro](./lectures/html/sql-intro.md)                                                 |
-| [SQL Joins](./lectures/html/sql-joins.md)                                                 |
-| [Node Intro](./lectures/html/node-intro.md)                                               |
-| [Node HTTP](./lectures/html/modules.md)                                                   |
-| [Node Filesystem](./lectures/html/fs.md)                                                  |
-| [Node Events](./lectures/html/events.md)                                                  |
-| [Node Streams](./lectures/html/streams.md)                                                |
-| [Express.js](./lectures/html/express.md)                                                  |
-| [Express.js and MySQL](./lectures/html/express_mysql.md)                                  |
+| Topic                                               | Date    |
+| --------------------------------------------------- | ------- |
+| [Starting a Project](./notes/STARTING-A-PROJECT.md) | 8/16/21 |
+
+## Lectures
+
+| Lectures                                                                                        | Date    |
+| ----------------------------------------------------------------------------------------------- | ------- |
+| Git Intro                                                                                       | 8/16/21 |
+| Git Branching and Merging                                                                       |
+| Git Conflict Resolution                                                                         |
+| [HTML Intro](./lectures/html/html-intro.md)                                                     |
+| [HTML Divs, Forms, and Tables](./lectures/html/html-divs-forms-and-tables.md)                   |
+| [CSS Intro](./lectures/css/css-intro.md)                                                        |
+| [CSS Flexbox and Grid](./lectures/css/css-flexbox-and-grid.md)                                  |
+| [JavaScript Intro](./lectures/javascript/javascript-introduction.md)                            |
+| [JavaScript Operators](./lectures/javascript/javascript-operators.md)                           |
+| [JavaScript Control Flow](./lectures/javascript/javascript-selection-statements.md)             |
+| [JavaScript Loops](./lectures/javascript/javascript-loops.md)                                   |
+| [JavaScript Functions](./lectures/javascript/javascript-functions.md)                           |
+| [JavaScript Objects](./lectures/javascript/javascript-objects.md)                               |
+| [JavaScript Higher Order Functions](./lectures/javascript/javascript-higher-order-functions.md) |
+| [JavaScript Object-Oriented Programming](./lectures/javascript/javascript-oop.md)               |
+| [JavaScript DOM](./lectures/javascript/javascript-dom.md)                                       |
+| [JavaScript Promises](./lectures/javascript/javascript-promises.md)                             |
+| [JavaScript Fetch Api](./lectures/javascript/javascript-apis.md)                                |
+| [JavaScript Error Handling](./lectures/javascript/javascript-error-handling.md)                 |
+| [JavaScript Frontend Tools](./lectures/javascript/javascript-npm-yarn-webpack.md)               |
+| [JavaScript ES6 Modules](./lectures/javascript/javascript-es6-modules.md)                       |
+| [React Intro](./lectures/react/react-intro.md)                                                  |
+| [React State and Props](./lectures/react/react-state-props.md)                                  |
+| [React Lifecycle Methods](./lectures/react/lifecycle-methods.md)                                |
+| [React Router](./lectures/react/react-router.md)                                                |
+| [React Hooks](./lectures/react/react-hooks.md)                                                  |
+| [React Router Hooks](./lectures/react/react-router-hooks.md)                                    |
+| [SQL Intro](./lectures/sql/sql-intro.md)                                                        |
+| [SQL Joins](./lectures/sql/sql-joins.md)                                                        |
+| [Node Intro](./lectures/node/node-intro.md)                                                     |
+| [Node HTTP](./lectures/node/modules.md)                                                         |
+| [Node Filesystem](./lectures/node/fs.md)                                                        |
+| [Node Events](./lectures/node/events.md)                                                        |
+| [Node Streams](./lectures/node/streams.md)                                                      |
+| [Express.js](./lectures/node/express.md)                                                        |
+| [Express.js and MySQL](./lectures/node/express_mysql.md)                                        |
 
 ## Resources
 
