@@ -19,7 +19,7 @@ Refer to this folder for markdown lectures, notes, class walkthroughs, and resou
 | Lectures                                                                                        | Date    |
 | ----------------------------------------------------------------------------------------------- | ------- |
 | Git Intro                                                                                       | 8/16/21 |
-| Git Branching and Merging                                                                       |
+| Git Branching and Merging                                                                       | 8/17/21 |
 | Git Conflict Resolution                                                                         |
 | [HTML Intro](./lectures/html/html-intro.md)                                                     |
 | [HTML Divs, Forms, and Tables](./lectures/html/html-divs-forms-and-tables.md)                   |
