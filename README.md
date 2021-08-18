@@ -1,10 +1,10 @@
+# TrueCoders Node 4
+
 <p align="center">
 <a href="https://truecoders.io">
 <img src="assets/TCLogoOnly.png" width="250" />
 </a>
 </p>
-
-# TrueCoders Node 4
 
 Refer to this folder for markdown lectures, notes, class walkthroughs, and resources.
 
@@ -20,7 +20,7 @@ Refer to this folder for markdown lectures, notes, class walkthroughs, and resou
 | ----------------------------------------------------------------------------------------------- | ------- |
 | Git Intro                                                                                       | 8/16/21 |
 | Git Branching and Merging                                                                       | 8/17/21 |
-| Git Conflict Resolution                                                                         |
+| Git Conflict Resolution                                                                         | 8/17/21 |
 | [HTML Intro](./lectures/html/html-intro.md)                                                     |
 | [HTML Divs, Forms, and Tables](./lectures/html/html-divs-forms-and-tables.md)                   |
 | [CSS Intro](./lectures/css/css-intro.md)                                                        |
