@@ -2,7 +2,8 @@ html {
   min-height: 100vh;
   font-size: 20px;
   background: linear-gradient(30deg, #fff, #0094c8);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 main {
@@ -21,6 +22,6 @@ main {
 }
 
 .highlight {
-    color: darkblue;
-    font-weight: 700;
+  color: darkblue;
+  font-weight: 700;
 }
