@@ -5,13 +5,44 @@
     <title>HTML Title</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="example.html">HTML Intro</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <h1>Main Heading</h1>
     <p>This a <strong>paragraph</strong></p>
+    <label for="tagList">Tags</label>
+    <ul id="tagList">
+      <li>html</li>
+      <li>head</li>
+      <li>body</li>
+      <li>etc...</li>
+    </ul>
+    <label for="cityList">Favorite Cities</label>
+    <ol id="cityList">
+      <li>Birmingham</li>
+      <li>Trenton</li>
+      <li>Phili</li>
+    </ol>
+    <label for="favColor">Pick your favorite color:</label>
+    <input type="color" name="favColor" id="favColor" />
     <span>This is a <em>span</em> (inline)</span>
-    <p>Same line?</p>
     <button>This is a button</button>
-    <input type="date" name="date" id="date" />
-    <a href="https://google.com">Google Search</a>
-    <img src="../assets/TCLogoOnly.png" alt="TrueCoders Logo">
+    <a title="This is a tooltip that gives more info" href="https://google.com"
+      >Google Search</a
+    >
+    <img src="../assets/TCLogoOnly.png" alt="TrueCoders Logo" />
   </body>
 </html>
