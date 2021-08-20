@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Ben Bryant | Portfolio</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="author" content="Ben Bryant" />
     <meta name="description" content="..." />
-    <link rel="stylesheet" href="./portfolio.css" />
+    <link rel="stylesheet" href="site.css">
   </head>
   <body>
     <header>
-      <span>Portfolio</span>
       <nav>
         <ul>
-          <li class="nav-link">
+          <li>
             <a href="index.html">Home</a>
           </li>
-          <li class="nav-link">
+          <li>
             <a href="example.html">HTML Intro</a>
           </li>
-          <li class="nav-link">
+          <li>
             <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="forms.html">Forms</a>
+          </li>
+          <li>
+            <a href="tables.html">Tables</a>
           </li>
         </ul>
       </nav>
@@ -27,14 +32,14 @@
     <main>
       <section>
         <!-- Header info with name, image and desc -->
-        <h1 style="text-decoration: double">Hello There! I'm Ben.</h1>
+        <h1 id="heading" class="heading">Hello There! I'm Ben.</h1>
         <img src="/myimage.png" alt="Ben Bryant in a TrueCoders T-Shirt" />
         <p>I'm a Web Developer who works... [insert about me]</p>
       </section>
       <section>
         <!-- Contact Info -->
         <label for="contactList">Ways to Contact Me:</label>
-        <ul id="contactList">
+        <ul id="contactList" class="d-inline mx-auto text-blue">
           <li>
             <a href="tel:+11234567890">+1 (123)-456-7890</a>
           </li>

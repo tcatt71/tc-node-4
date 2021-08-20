@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="site.css" />
+    <title>Forms and Tables</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="example.html">HTML Intro</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="forms.html">Forms</a>
+          </li>
+          <li>
+            <a href="tables.html">Tables</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Form Examples</h1>
+      <div>
+        <h2>Login Form</h2>
+        <form>
+          <label for="loginEmail">Email:</label>
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="email@domain.com"
+            name="email"
+            required
+          />
+          <label for="loginPassword">Password:</label>
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="********"
+            name="password"
+            required
+          />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+      <div>
+        <h2>Sign Up Form</h2>
+        <form>
+          <div>
+            <h3>Choose one:</h3>
+            <label for="radioA">A</label>
+            <input type="radio" name="answer" id="inputA" />
+            <label for="inputB">B</label>
+            <input type="radio" name="answer" id="inputB" />
+            <label for="inputC">C</label>
+            <input type="radio" name="answer" id="inputC" />
+          </div>
+          <div>
+            <label for="signupFn">First Name:</label>
+            <input type="text" id="signupFn" placeholder="Jane" name="fname" />
+          </div>
+          <div>
+            <label for="signupLn">Last Name:</label>
+            <input type="text" id="signupLn" placeholder="Doe" name="lname" />
+          </div>
+          <div>
+            <label for="signupDOB">DOB:</label>
+            <input type="date" id="signupDOB" name="dob" />
+          </div>
+          <div>
+            <label for="signupRange">Codewars Rank:</label>
+            <input
+              type="range"
+              min="1"
+              max="8"
+              name="codewars_rank"
+              id="signupRange"
+            />
+          </div>
+          <div>
+            <label for="signupEmail">Email:</label>
+            <input
+              type="email"
+              id="signupEmail"
+              placeholder="email@domain.com"
+              name="email"
+            />
+          </div>
+          <div>
+            <label for="signupPassword1">Password:</label>
+            <input
+              name="password"
+              type="password"
+              id="signupPassword1"
+              placeholder="********"
+            />
+          </div>
+          <div>
+            <label for="signupPassword2">Re-type Password:</label>
+            <input
+              type="password"
+              id="signupPassword2"
+              placeholder="********"
+            />
+          </div>
+          <div>
+            <label for="media">Favorite Media:</label>
+            <input type="text" list="media" placeholder="Search.." />
+            <datalist name="entertainment" id="media">
+              <optgroup label="TV">
+                <option value="GOT">Game of Thrones</option>
+                <option value="Office">The Office</option>
+              </optgroup>
+              <optgroup label="Movie">
+                <option value="Mask">The Mask</option>
+              </optgroup>
+              <optgroup label="Book">
+                <option value="NoTW">Name of The Wind</option>
+              </optgroup>
+            </datalist>
+          </div>
+          <label for="newsletterOptin"
+            >Opt-in for daily emails with tips and tricks:</label
+          >
+          <input
+            type="checkbox"
+            name="newsletter"
+            id="newsletterOptin"
+            checked
+          />
+          <br />
+          <label for="termsAgreement">Agree to terms and services:</label>
+          <input
+            type="checkbox"
+            id="termsAgreement"
+            name="agreement"
+            required
+          />
+          <br />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <form>
+          <div>
+            <label for="userEmail">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="userEmail"
+              placeholder="email@domain.com"
+            />
+          </div>
+          <div>
+            <label for="userSubject">Subject:</label>
+            <input
+              type="text"
+              name="subject"
+              id="userSubject"
+              value="Contact from Site"
+              readonly
+            />
+          </div>
+          <div>
+            <label for="userMessage">Message:</label>
+            <br />
+            <textarea
+              name="message"
+              id="userMessage"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
