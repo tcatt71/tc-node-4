@@ -38,9 +38,9 @@ Know what you're looking for? Jump to it!
 | Git Branching and Merging                                                                       | 8/17/21 |
 | Git Conflict Resolution                                                                         | 8/17/21 |
 | [HTML Intro](./lectures/html/html-intro.md)                                                     | 8/18/21 |
-| [CSS Intro](./lectures/css/css-intro.md)                                                        | 8/18/21 |
-| [HTML Divs, Forms, and Tables](./lectures/html/html-divs-forms-and-tables.md)                   | 8/19/21 |
-| [CSS Flexbox and Grid](./lectures/css/css-flexbox-and-grid.md)                                  | 8/19/21 |
+| [CSS Intro](./lectures/css/css-intro.md)                                                        | 8/19/21 |
+| [HTML Divs, Forms, and Tables](./lectures/html/html-divs-forms-and-tables.md)                   | 8/20/21 |
+| [CSS Flexbox and Grid](./lectures/css/css-flexbox-and-grid.md)                                  | 8/20/21 |
 | [JavaScript Intro](./lectures/javascript/javascript-introduction.md)                            |         |
 | [JavaScript Operators](./lectures/javascript/javascript-operators.md)                           |         |
 | [JavaScript Control Flow](./lectures/javascript/javascript-selection-statements.md)             |         |
