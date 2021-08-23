@@ -40,7 +40,7 @@ Know what you're looking for? Jump to it!
 | [HTML Intro](./lectures/html/html-intro.md)                                                     | 8/18/21 |
 | [CSS Intro](./lectures/css/css-intro.md)                                                        | 8/19/21 |
 | [HTML Divs, Forms, and Tables](./lectures/html/html-divs-forms-and-tables.md)                   | 8/20/21 |
-| [CSS Flexbox and Grid](./lectures/css/css-flexbox-and-grid.md)                                  | 8/20/21 |
+| [CSS Flexbox and Grid](./lectures/css/css-flexbox-and-grid.md)                                  | 8/23/21 |
 | [JavaScript Intro](./lectures/javascript/javascript-introduction.md)                            |         |
 | [JavaScript Operators](./lectures/javascript/javascript-operators.md)                           |         |
 | [JavaScript Control Flow](./lectures/javascript/javascript-selection-statements.md)             |         |
@@ -133,6 +133,8 @@ Know what you're looking for? Jump to it!
 
 - [HTML Can Do That?](https://dev.to/ananyaneogi/html-can-do-that-c0n) by Ananya Neogi
 - [CSS Can Do That?](https://dev.to/ananyaneogi/css-can-do-that-18g7) by Ananya Neogi
+- [Complete Flexbox Tutorial w/ Cheat Sheet](https://dev.to/joyshaheb/flexbox-cheat-sheets-in-2021-css-2021-3edl) by Joy Shaheb
+
 - ...more to be added
 
 [[To Top](#truecoders-node-4)]
