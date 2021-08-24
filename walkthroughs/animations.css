@@ -19,23 +19,61 @@ body {
 
 .d-flex-center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  padding: 3rem;
 }
 
-img {
+.d-flex-around {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.nav-logo {
   transform: rotate(0deg) scale(1);
-  animation: LogoSpin 5s infinite ease;
   box-shadow: 0px 0px 0px black;
+  max-height: 3rem;
 }
 
-@keyframes LogoSpin {
-  0% {
-    transform: rotate(0deg) scale(1);
-    box-shadow: 0px 0px 10px black;
+#optin:checked ~ nav {
+  background-color: #333;
+  color: white;
+}
+
+#optin:checked ~ nav .nav-logo {
+  animation: ShakeLogo 1s;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-link {
+  padding: 0.5rem;
+  border-top-left-radius: 10px;
+  transition: background-color, color 0.51s;
+}
+
+.nav-link:hover {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes ShakeLogo {
+  25% {
+    transform: skew(15deg);
+  }
+  50% {
+    transform: skew(-15deg);
+  }
+  75% {
+    transform: skew(15deg);
   }
   100% {
-    transform: rotate(360deg) scale(1);
-    box-shadow: 0px 0px 0px black;
+    transform: skew(0deg);
   }
 }
