@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="flexbox-grid.css" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="example.html">HTML Intro</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="forms.html">Forms</a>
+        </li>
+        <li>
+          <a href="tables.html">Tables</a>
+        </li>
+        <li>
+          <a href="flexbox-grid.html">Flexbox & Grid</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="d-flex flex-wrap align-stretch bg-light h-92">
+      <!-- Left Split -->
+      <div class="flex-1 container">
+        <h2>Flexbox</h2>
+        <p>Flexbox is useful for single directional, responsive layouts.</p>
+        <h3>Properties</h3>
+        <ul>
+          <li>display: flex;</li>
+          <li>flex-direction: [row|column|row-reverse|column-reverse];</li>
+          <li>justify-content: [...];</li>
+          <li>align-items: [...];</li>
+          <li>align-self: [...];</li>
+          <li>flex-wrap: [wrap|nowrap];</li>
+          <li>flex-grow: [1|...];</li>
+          <li>flex-shring: [1|...];</li>
+          <li>flex-basis: [200px|...];</li>
+        </ul>
+      </div>
+
+      <!-- Right Split -->
+      <div class="flex-1 container">
+        <h2>Grid</h2>
+        <p>Grid is useful for multi-dimensional, responsive layouts.</p>
+        <h3>Properties</h3>
+        <ul>
+          <li>display: grid;</li>
+          <li>grid-template-columns: [1fr|...];</li>
+          <li>grid-template-rows: [1fr|...];</li>
+          <li>grid-column-start: [1|...];</li>
+          <li>grid-column-end: [1|...];</li>
+          <li>grid-row-start: [1|...];</li>
+          <li>grid-row-end: [1|...];</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+html,
+body {
+  font-size: 16px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 80vw;
+  height: 80vw;
+  margin: 3rem auto;
+  border: 5px solid black;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border: 1px solid black;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box8,
+#box9,
+#box10,
+#box11 {
+  border-bottom: 5px solid black;
+}
+
+#box3,
+#box7,
+#box10,
+#box11,
+#box12,
+#box15 {
+  border-left: 5px solid black;
+}
+
+.prompt {
+  position: absolute;
+  font-size: 1.50rem;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+}
+
+input[type="number"] {
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+
+  .grid {
+    width: 50vw;
+    height: 50vw;
+  }
+}

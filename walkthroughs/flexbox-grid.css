@@ -1,0 +1,34 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.h-92 {
+  height: 92vh;
+  overflow-y: scroll;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.flex-1 {
+  flex: 1 1 460px;
+}
+
+.container {
+  padding: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.bg-light {
+  background-color: #eee;
+}

@@ -1,13 +1,14 @@
-* {
-  box-sizing: border-box;
-}
-
 html,
 body {
   color: black;
   font-size: 20px;
   margin: 0;
   width: 100vw;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #222;
+  box-sizing: border-box;
 }
 
 nav > ul {
@@ -21,4 +22,5 @@ nav > ul {
 
 nav {
   box-shadow: 0px 0px 5px black;
+  height: 8vh;
 }
