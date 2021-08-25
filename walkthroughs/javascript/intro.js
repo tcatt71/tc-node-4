@@ -14,3 +14,17 @@ let largeNumber = 12345678901234567890n; // BigInt
 let yesOrNo = true; // boolean
 ("unique"); // only a symbol in the context of structured data
 
+("this is a string");
+("string with single quotes");
+`template literal string`;
+let someString = "this is a string assigned to a variable";
+
+let firstName = "Ben"; // string
+let lastName = "Bryant"; // string
+
+// Concatenation, combining two or more strings with '+'
+let fullName = "My name is " + firstName + " " + lastName + "."; // My name is Ben Bryant.
+// Interpolation
+let templateFullName = `My name is ${firstName} ${lastName}.`; // My name is Ben Bryant.
+
+console.log(templateFullName);
