@@ -1,30 +1,45 @@
-// [declaration keyword] [identifier] = [value]
+console.log("Hello World!\n==========\n");
+console.log(
+  "Follow the steps in the README.md file to complete the exercises:\n==========\n"
+);
 
-// Declaration Keywords
-var y; // declare a variable that is function (local) scoped. can be reassigned
-let x; // declare a variable that is block (local) scoped. can be reassigned
-const months = 12; // declare a variable that is block (local) scoped. cannot be reassigned
+// Exercise 1
+const firstName = "Ben";
+let lastName = "Bryant";
+var age = 24;
+let isAlive = true;
+let middleName = null;
+let noMiddleName; // undefined
 
-// Data Types
-let notDefined; // undefined
-let empty = null; // null
-let year = 2021; // number
-let name = "Ben"; // string
-let largeNumber = 12345678901234567890n; // BigInt
-let yesOrNo = true; // boolean
-("unique"); // only a symbol in the context of structured data
-
-("this is a string");
-("string with single quotes");
-`template literal string`;
-let someString = "this is a string assigned to a variable";
-
-let firstName = "Ben"; // string
-let lastName = "Bryant"; // string
-
-// Concatenation, combining two or more strings with '+'
-let fullName = "My name is " + firstName + " " + lastName + "."; // My name is Ben Bryant.
+// Exercise 2
+// Concatenation
+const fullName = firstName + lastName; // "Ben Bryant"
 // Interpolation
-let templateFullName = `My name is ${firstName} ${lastName}.`; // My name is Ben Bryant.
+let templateFullName = `${firstName} ${lastName}`; // "Ben Bryant"
 
-console.log(templateFullName);
+console.log(
+  `TEST ${
+    fullName === templateFullName
+  }: fullName is the same as templateFullName`
+);
+
+// Exercise 3
+let city = "Birmingham";
+let state = "Alabama";
+let pastTime = "running";
+let myStory =
+  "Hello! My name is " +
+  fullName +
+  ". I live in " +
+  city +
+  ", " +
+  state +
+  ". I enjoy " +
+  pastTime +
+  ".";
+let templateMyStory = `Hello! My name is ${fullName}. I live in ${city}, ${state}. I enjoy ${pastTime}.`;
+
+console.log(
+  templateMyStory,
+  `TEST ${myStory === templateMyStory}: myStory is the same as templateMyStory`
+);

@@ -4,14 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="intro.js" defer></script>
+    <script src="operators.js" defer></script>
     <title>JavaScript Programming</title>
+    <style>
+      body {
+        font-size: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        align-items: stretch;
+      }
+
+      .container:nth-child(1) {
+        flex: 1;
+      }
+
+      .container:nth-child(2) {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .p-3 {
+        padding: 3rem;
+      }
+    </style>
   </head>
   <body>
-    <h1>JavaScript</h1>
-    <p>
-      View the output in the DevTools Console by pressing <kbd>Fn + F12</kbd>,
-      or right click and 'inspect the page'.
-    </p>
+    <div class="container">
+      <div class="container-half">
+        <img src="../../assets/TCLogoOnly.png" alt="TrueCoders' Company Logo" />
+      </div>
+      <div class="container-half">
+        <div class="p-3">
+          <h1>JavaScript</h1>
+          <p>
+            View the output in the DevTools Console by pressing
+            <kbd>Fn + F12</kbd>, or right click and 'inspect the page'.
+          </p>
+          <hr />
+          <h3>Exercise 1</h3>
+          <ol>
+            <li>Declare 2 variables, a and b, and assign 20 to a and 4 to b</li>
+            <li>
+              Declare a variable add that uses the + operator to store the
+              result of adding the values stored in a and b
+            </li>
+            <li>
+              Declare a variable minus that uses the - operator to store the
+              result of subtracting the values stored in a and b
+            </li>
+            <li>
+              Declare a variable multiply that uses the * operator to store the
+              result of multiplying the values stored in a and b
+            </li>
+            <li>
+              Declare a variable dividing that uses the / operator to store the
+              result of dividing the values stored in a and b
+            </li>
+          </ol>
+          <hr />
+          <h3>Exercise 2</h3>
+
+          <code>
+            let a = 11;<br />
+            let str = "11";<br />
+            let str2 = "eleven";<br />
+            let isPresent = true;<br />
+            let firstName = "Jackie";<br />
+            let lastName = "Chan";<br />
+          </code>
+
+          <ol>
+            <li>What is the value of: a + str?</li>
+            <li>What is the value of: a + str2?</li>
+            <li>What is the value of: a + isPresent?</li>
+            <li>What is the value of: a + firstName?</li>
+            <li>What is the value of: a + lastName?</li>
+          </ol>
+          <hr />
+          <h3>Exercise 3</h3>
+
+          <code>
+            let d = 5;<br />
+            let str3 = "5";<br />
+            let str4 = "five";<br />
+            let isPresent2 = false;<br />
+            let firstName2 = "Robin";<br />
+            let lastName2 = "Williams";
+          </code>
+
+          <ol>
+            <li>What is the value of: d == str3?</li>
+            <li>What is the value of: d === str3?</li>
+            <li>What is the value of: !isPresent2?</li>
+            <li>What is the value of: (“eleven” == str4 && d >= str3)?</li>
+            <li>What is the value of: (!isPresent2 || isPresent2)?</li>
+            <li>What is the value of: 0 == false?</li>
+            <li>What is the value of: 0 === false?</li>
+            <li>What is the value of: 0 != false?</li>
+            <li>What is the value of 0 !== false?</li>
+          </ol>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
