@@ -25,6 +25,7 @@ Know what you're looking for? Jump to it!
 | --------------------------------------------------- | ------- |
 | [Starting a Project](./notes/STARTING-A-PROJECT.md) | 8/16/21 |
 | [Intro to Frontend](./notes/INTRO-TO-FRONTEND.md)   | 8/18/21 |
+| [CSS Units](./notes/CSS-UNITS.md)                   | 8/20/21 |
 
 [[To Top](#truecoders-node-4)]
 
@@ -41,10 +42,10 @@ Know what you're looking for? Jump to it!
 | [CSS Intro](./lectures/css/css-intro.md)                                                        | 8/19/21 |
 | [HTML Divs, Forms, and Tables](./lectures/html/html-divs-forms-and-tables.md)                   | 8/20/21 |
 | [CSS Flexbox and Grid](./lectures/css/css-flexbox-and-grid.md)                                  | 8/23/21 |
-| [JavaScript Intro](./lectures/javascript/javascript-introduction.md)                            |         |
-| [JavaScript Operators](./lectures/javascript/javascript-operators.md)                           |         |
-| [JavaScript Control Flow](./lectures/javascript/javascript-selection-statements.md)             |         |
-| [JavaScript Loops](./lectures/javascript/javascript-loops.md)                                   |         |
+| [JavaScript Intro](./lectures/javascript/javascript-introduction.md)                            | 8/24/21 |
+| [JavaScript Operators](./lectures/javascript/javascript-operators.md)                           | 8/25/21 |
+| [JavaScript Control Flow](./lectures/javascript/javascript-selection-statements.md)             | 8/25/21 |
+| [JavaScript Loops](./lectures/javascript/javascript-loops.md)                                   | 8/26/21 |
 | [JavaScript Functions](./lectures/javascript/javascript-functions.md)                           |         |
 | [JavaScript Objects](./lectures/javascript/javascript-objects.md)                               |         |
 | [JavaScript Higher Order Functions](./lectures/javascript/javascript-higher-order-functions.md) |         |
