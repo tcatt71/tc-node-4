@@ -1,12 +1,7 @@
-// for (let i = 0; i < 100; i++) {
-//   console.log("My name is Ben", i + 1);
-// }
+console.log("Script attached");
 
-let num = 16;
-let guess = parseInt(prompt("Guess a number"));
+// Exercise 1
 
-while (num != guess) {
-  guess = parseInt(prompt("Guess a number"));
-}
+// Exercise 2
 
-alert("Correct");
+// FIZZBUZZ EXTREME
