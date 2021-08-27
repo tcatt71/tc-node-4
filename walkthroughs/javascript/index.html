@@ -4,36 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="control-flow.js" defer></script>
+    <script src="loops.js" defer></script>
+    <link rel="stylesheet" href="index.css">
     <title>JavaScript Programming</title>
-    <style>
-      body {
-        font-size: 20px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        padding: 0;
-        margin: 0;
-      }
-      .container {
-        display: flex;
-        align-items: stretch;
-      }
-
-      .container:nth-child(1) {
-        flex: 1;
-      }
-
-      .container:nth-child(2) {
-        flex: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .p-3 {
-        padding: 3rem;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -49,8 +22,38 @@
           </p>
           <hr />
           <h2>Selection Statements</h2>
+          <p>Syntax:</p>
+          <pre><code>
+            if (userName == "Ben") {
+              alert("Hello Ben!");
+            } else if (userName) {
+              alert("Hello not Ben!");
+            } else {
+              alert("You didn't give me a name :(");
+            }
+          </code></pre>
           <hr />
           <h2>Switch Case</h2>
+          <p>Syntax:</p>
+          <pre><code>
+            switch (url) {
+              case url == ".html":
+                console.log("html file");
+              case url == ".css":
+                console.log("css file");
+              case url == ".js":
+                console.log("js file");
+              case url == ".png":
+                console.log("png file");
+              case url == ".jpeg":
+                console.log("jpeg file");
+              case url == ".jpg":
+                console.log("jpg file");
+                break;
+              default:
+                console.log("Not a valid file type");
+            }
+          </code></pre>
         </div>
       </div>
     </div>
