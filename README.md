@@ -46,8 +46,8 @@ Know what you're looking for? Jump to it!
 | [JavaScript Operators](./lectures/javascript/javascript-operators.md)                           | 8/25/21 |
 | [JavaScript Control Flow](./lectures/javascript/javascript-selection-statements.md)             | 8/25/21 |
 | [JavaScript Loops](./lectures/javascript/javascript-loops.md)                                   | 8/26/21 |
-| [JavaScript Functions](./lectures/javascript/javascript-functions.md)                           |         |
-| [JavaScript Objects](./lectures/javascript/javascript-objects.md)                               |         |
+| [JavaScript Functions](./lectures/javascript/javascript-functions.md)                           | 8/27/21 |
+| [JavaScript Objects](./lectures/javascript/javascript-objects.md)                               | 8/30/21 |
 | [JavaScript Higher Order Functions](./lectures/javascript/javascript-higher-order-functions.md) |         |
 | [JavaScript Object-Oriented Programming](./lectures/javascript/javascript-oop.md)               |         |
 | [JavaScript DOM](./lectures/javascript/javascript-dom.md)                                       |         |

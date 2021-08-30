@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="loops.js" defer></script>
+    <script src="objects.js" defer></script>
     <link rel="stylesheet" href="index.css" />
     <title>JavaScript Programming</title>
   </head>
@@ -19,36 +19,46 @@
       </div>
       <div class="container-half">
         <div class="p-3 fit-content">
-          <h1>JavaScript Loops</h1>
+          <h1>JavaScript Objects</h1>
           <p>
             View the output in the DevTools Console by pressing
             <kbd>Fn + F12</kbd>, or right click and 'inspect the page'.
           </p>
           <hr />
-          <h2>For Loop</h2>
+          <h2>Arrays</h2>
           <p>Syntax:</p>
           <pre><code>
-            for (let i = 0; i < 10; i++) {
-              console.log(i);
+            let scores = [12, 16, 17, 18];
+
+            // or
+
+            let names = new Array("Frodo", "Bilbo", "Merry", "Pippen", "Sam")
+          </code></pre>
+          <hr />
+          <h2>Objects</h2>
+          <p>Syntax:</p>
+          <pre><code>
+            let person = {
+              firstName: "Frodo",
+              lastName: "Baggins",
+              age: 51
             }
           </code></pre>
           <hr />
-          <h2>While Loop</h2>
+          <h2>Accessing Values</h2>
+          <p>
+            You can access values of objects and arrays by using
+            <strong>Bracket Notation</strong> or <strong>Dot Notation</strong>.
+          </p>
           <p>Syntax:</p>
           <pre><code>
-            while (isOnline) {
-              console.log("User is online. Transmitting data...")
-            }
+            // Bracket Notation
+            scores[2]; // 17
+            
+            // Dot Notation
+            person.firstName; // "Frodo"
           </code></pre>
           <hr />
-          <h2>Do While Loop</h2>
-          <p>Syntax:</p>
-          <pre><code>
-            do {
-              console.log("Sending message...")
-            }
-            while (!messageReceived);
-          </code></pre>
         </div>
       </div>
     </div>

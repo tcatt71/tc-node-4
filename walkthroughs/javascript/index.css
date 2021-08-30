@@ -17,21 +17,21 @@ body {
   height: fit-content;
 }
 .container {
-  display: flex;
+  display: grid;
+  grid-template-areas: "side content";
   align-items: stretch;
   height: 100vh;
   overflow: hidden;
 }
 
 .container-half:nth-child(1) {
-  flex: 1;
+  grid-area: "side";
   background-color: var(--dark-gray);
   color: var(--gray);
 }
 
 .container-half:nth-child(2) {
-  flex: 2;
-  display: flex;
+  grid-area: "content";
   justify-content: center;
   height: 100vh;
   overflow-y: scroll;
@@ -61,6 +61,7 @@ pre {
   background-color: #123;
   border-radius: 10px;
   color: #def;
+  overflow-x: scroll;
 }
 kbd {
   /* Background and color */
@@ -78,4 +79,13 @@ kbd {
 
 .p-3 {
   padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas: "side" "content";
+  }
+  html {
+    font-size: 14px;
+  }
 }
