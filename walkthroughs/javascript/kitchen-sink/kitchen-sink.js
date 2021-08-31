@@ -35,23 +35,23 @@ Call the checkAge function 4 times with the following people: Charles who is 21,
 */
 
 function grantEntry(age, name) {
-  alert(
-    checkAge(age)
-      ? `Enter ${name}`
-      : `Sorry ${name}, you can't visit this site.`
-  );
+    alert(
+        checkAge(age)
+            ? `Enter ${name}`
+            : `Sorry ${name}, you can't visit this site.`
+    );
 }
 
 function checkAge(age) {
-  if (age < 21) {
-    return false;
-  } else return true;
+    if (age < 21) {
+        return false;
+    } else return true;
 }
 
-grantEntry(21, "Charles");
-grantEntry(27, "Abby");
-grantEntry(17, "John");
-grantEntry(18, "James");
+// grantEntry(21, "Charles");
+// grantEntry(27, "Abby");
+// grantEntry(17, "John");
+// grantEntry(18, "James");
 
 /*
 Create an array of your favorite vegetables and name it accordingly.
@@ -69,42 +69,91 @@ Store the returned result of that function in a variable. If the number is even,
 let veggies = ["tomatoes", "po-ta-toes", "celery"];
 
 veggies.forEach(function (value) {
-  console.log(value);
+    console.log(value);
 });
 
 let friends = [
-  {
-    name: "Kvothe",
-    age: 17,
-  },
-  {
-    name: "Simmon",
-    age: 30,
-  },
-  {
-    name: "Wilem",
-    age: 31,
-  },
-  {
-    name: "Kote",
-    age: 23,
-  },
-  {
-    name: "Devi",
-    age: 18,
-  },
+    {
+        name: "Kvothe",
+        age: 17,
+    },
+    {
+        name: "Simmon",
+        age: 30,
+    },
+    {
+        name: "Wilem",
+        age: 31,
+    },
+    {
+        name: "Kote",
+        age: 23,
+    },
+    {
+        name: "Devi",
+        age: 18,
+    },
 ];
 
-friends.forEach(function (person) {
-  grantEntry(person.age, person.name);
-});
+// friends.forEach(function (person) {
+//   grantEntry(person.age, person.name);
+// });
 
 function howIsTheWorld(word) {
-  if (word.length % 2 == 0) {
-    console.log("The world is nice and even.");
-  } else {
-    console.log("The world is an odd place.");
-  }
+    if (word.length % 2 == 0) {
+        console.log("The world is nice and even.");
+    } else {
+        console.log("The world is an odd place.");
+    }
 }
 
 howIsTheWorld("Hello World!");
+
+let person = {
+    name: "Devi",
+    age: 18,
+    hairColor: "blond",
+};
+
+// iterate over the values of an iterable object (array)
+for (let val of friends) {
+    console.log(val);
+}
+
+// iterate over the keys of an object
+for (let prop in person) {
+    console.log(prop);
+}
+
+function useContacts(list, action) {
+    for (let value of list) {
+        action(value.age, value.name);
+    }
+}
+
+// useContacts(friends, grantEntry);
+
+useContacts(friends, console.log);
+
+function calcAge(unit) {
+    return function (age) {
+        return age * unit;
+    };
+}
+
+let calcAgeInYears = calcAge(1);
+let calcAgeInWeeks = calcAge(52);
+let calcAgeInDays = calcAge(365.25);
+let calcAgeInHours = calcAge(365.25 * 24);
+let calcAgeInMinutes = calcAge(365.25 * 24 * 60);
+let calcAgeInSeconds = calcAge(365.25 * 24 * 60 * 60);
+
+let friendsList = friends.map(function (friend) {
+    return {
+        name: friend.name.toUpperCase(),
+        age: calcAgeInSeconds(friend.age),
+    };
+});
+
+console.log(friends);
+console.log(friendsList);

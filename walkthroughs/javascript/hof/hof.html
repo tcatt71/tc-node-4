@@ -4,11 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="objects.js" defer></script>
+        <script src="hof.js" defer></script>
         <script src="../../../prism/prism.js" defer></script>
         <link rel="stylesheet" href="../../../prism/prism.css" />
         <link rel="stylesheet" href="../index.css" />
-        <title>JS Objects | TrueCoders</title>
+        <title>Higher-Order Functions | TrueCoders</title>
     </head>
     <body>
         <div class="container">
@@ -20,11 +20,11 @@
                 />
                 <ul class="sidenav">
                     <li>
-                        <a href="../objects/objects.html">Objects and Arrays</a>
+                        <a href="../objects/objects.html">Objects</a>
                     </li>
                     <li>
                         <a href="../kitchen-sink/kitchen-sink.html"
-                            >JS Kitchen Sink</a
+                            >Kitchen Sink Lab</a
                         >
                     </li>
                     <li>
@@ -34,48 +34,43 @@
             </div>
             <div class="container-half">
                 <div class="p-3 fit-content">
-                    <h1>JavaScript Objects</h1>
+                    <h1>Higher-Order Functions</h1>
+                    <p>
+                        Functions that take in a function value as a parameter,
+                        or return a function value are known as
+                        <em>Higher-Order Functions</em>.
+                    </p>
                     <p>
                         View the output in the DevTools Console by pressing
                         <kbd>Fn + F12</kbd>, or right click and 'inspect the
                         page'.
                     </p>
                     <hr />
-                    <h2>Arrays</h2>
+                    <h2>Taking a function value as a parameter</h2>
                     <p>Syntax:</p>
                     <pre><code class="language-js">
-            let scores = [12, 16, 17, 18];
+                        function useContacts(list, action) {
+                            for (let value of list) {
+                                action(value.age, value.name);
+                            }
+                        }
 
-            // or
-
-            let names = new Array("Frodo", "Bilbo", "Merry", "Pippen", "Sam")
+                        useContacts(contacts, console.log);
           </code></pre>
                     <hr />
-                    <h2>Objects</h2>
+                    <h2>Returning a function value</h2>
                     <p>Syntax:</p>
                     <pre><code class="language-js">
-            let person = {
-              firstName: "Frodo",
-              lastName: "Baggins",
-              age: 51
-            }
+                        function calcAge(unit) {
+                            return function (age) {
+                                return age * unit;
+                            };
+                        }
+
+                        let calcAgeInDays = calcAge(365.25);
           </code></pre>
                     <hr />
-                    <h2>Accessing Values</h2>
-                    <p>
-                        You can access values of objects and arrays by using
-                        <strong>Bracket Notation</strong> or
-                        <strong>Dot Notation</strong>.
-                    </p>
-                    <p>Syntax:</p>
-                    <pre><code>
-            // Bracket Notation
-            scores[2]; // 17
-            
-            // Dot Notation
-            person.firstName; // "Frodo"
-          </code></pre>
-                    <hr />
+                    <!-- More Content Here -->
                 </div>
             </div>
         </div>
