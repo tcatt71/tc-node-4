@@ -39,11 +39,33 @@ let longestName = people.reduce(function (name, person) {
 
 console.log(longestName); // Gandalf
 
+function bookInfo() {
+  console.log(
+    `${this.title} by ${this.author} is ${this.pages} pages and has been read ${this.readCount} time(s).`
+  );
+}
+
 // Exercise 2
+const book = {
+  author: "Patrick Rothfuss",
+  title: "Name of the Wind",
+  pages: 721,
+  readCount: 3,
+  printInfo: bookInfo,
+};
 
-let x = [7];
-let y = x; // x is [7]
+const book2 = book;
 
-x[1] = 9;
+// Value vs Reference Types
+// Primitive vs Non-primitive
+
+let x = 1;
+let y = x;
+
+x = 2;
 
 console.log(y);
+
+book.readCount++;
+
+console.log(book2);

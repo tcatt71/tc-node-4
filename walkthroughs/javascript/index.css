@@ -6,35 +6,74 @@
   --gray: #ccdbdc;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 0;
   margin: 0;
+  line-height: 1.75rem;
 }
 .fit-content {
   height: fit-content;
+  max-width: 768px;
+  margin: 0 auto;
 }
 .container {
   display: grid;
-  grid-template-areas: "side content";
+  grid-template-areas: "side content content";
   align-items: stretch;
+  justify-content: stretch;
   height: 100vh;
   overflow: hidden;
 }
 
 .container-half:nth-child(1) {
-  grid-area: "side";
+  grid-area: side;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--dark-gray);
   color: var(--gray);
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.sidenav {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav a {
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.sidenav a:hover {
+  opacity: 0.8;
+}
+
+.sidenav > li {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--gray);
 }
 
 .container-half:nth-child(2) {
-  grid-area: "content";
+  grid-area: content;
   justify-content: center;
   height: 100vh;
   overflow-y: scroll;
+}
+
+.logo {
+  width: auto;
+  height: 6rem;
 }
 
 /* Width */
@@ -58,15 +97,13 @@ body {
 }
 
 pre {
-  background-color: #123;
   border-radius: 10px;
-  color: #def;
-  overflow-x: scroll;
 }
+
 kbd {
   /* Background and color */
   background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  border-radius: 0.25rem;
   color: rgba(0, 0, 0, 0.7);
 
   /* Bottom shadow */
@@ -74,7 +111,7 @@ kbd {
     rgba(0, 0, 0, 0.4) 0px 1px 1px;
 
   /* Spacing */
-  padding: 8px;
+  padding: 0.25rem;
 }
 
 .p-3 {
@@ -85,7 +122,18 @@ kbd {
   .container {
     grid-template-areas: "side" "content";
   }
-  html {
-    font-size: 14px;
+  html,
+  body {
+    font-size: 16px;
+    line-height: 2rem;
+  }
+  .p-3 {
+    padding: 1rem;
+  }
+  .container-half:nth-child(2) {
+    height: fit-content;
+  }
+  .container {
+    height: fit-content;
   }
 }
