@@ -21,13 +21,22 @@ let friends = [
     },
 ];
 
+// Callback function
+
+friends.forEach(function (value, index, arr) {
+    console.log(value, index, arr);
+    value.age *= 365.25;
+});
+
+console.log(friends);
+
 function useContacts(list, action) {
     for (let value of list) {
         action(value.age, value.name);
     }
 }
 
-useContacts(friends, console.log);
+// useContacts(friends, console.log);
 
 function calcAge(unit) {
     return function (age) {
@@ -51,10 +60,10 @@ let numbers = [1, 2, 3, 4, 5];
 
 let doubled = numbers.map((num) => num * 2);
 
-console.log(doubled); // [2, 4, 6, 8, 10]
+// console.log(doubled);
 
-console.log(friends);
-console.log(friendsList);
+// console.log(friends);
+// console.log(friendsList);
 
 // Exercise 1
 // Function Declaration
@@ -85,5 +94,15 @@ let person = {
     },
 };
 
-person.greet();
-person.greet3rdPerson();
+// person.greet();
+// person.greet3rdPerson();
+
+function split(str) {
+    let arr = [];
+    for (let i = 0; i < str.length; i++) {
+        arr.push(str[i]);
+    }
+    return arr;
+}
+
+console.log(split("ben"));
