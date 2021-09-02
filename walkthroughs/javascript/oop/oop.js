@@ -1,72 +1,84 @@
-let team = {
-    name: undefined,
-    city: undefined,
-    roster: [],
-    playGame: function (team) {
-        console.log(`Playing the ${team.name}`);
-    },
-};
+// Exercise 1
 
-function createTeam(name, city) {
-    let obj = Object.create(team);
-    obj.name = name;
-    obj.city = city;
-    return obj;
-}
-
-let teams = [
-    createTeam("Trailblazers", "Portland"),
-    createTeam("76ers", "Philedelphia"),
-];
-console.log(teams);
-teams[0].playGame(teams[1]);
-
-class Team {
-    constructor(city, name) {
-        this.city = city;
+class Store {
+    constructor(name) {
         this.name = name;
+        this.inventory = [];
+        this.employees = [];
+        this.manager = null;
     }
 
-    playGame(team) {
-        console.log(`Playing the ${team.name}`);
+    displayInventory() {
+        this.inventory.forEach((item) => {
+            alert(`Product: ${item.name}, Stock: ${item.amount}`);
+        });
+    }
+
+    stock(productName, amount) {
+        if (
+            this.inventory.reduce(
+                (found, currItem) =>
+                    currItem.name == productName ? currItem : null,
+                null
+            )
+        ) {
+            // The item is in inventory and must be updated
+            this.inventory.forEach((val, idx) => {
+                if (val.name == productName) {
+                    this.inventory[idx].amount += amount;
+                }
+            });
+        } else {
+            // Item is new and not currently in inventory
+            let item = new Item(productName);
+            item.amount += amount;
+            this.inventory.push(item);
+        }
+
+        this.displayInventory();
+    }
+
+    sell(productName, amount) {
+        if (
+            this.inventory.reduce(
+                (found, currItem) =>
+                    currItem.name == productName ? currItem : null,
+                null
+            )
+        ) {
+            // The item is in inventory and must be updated
+            this.inventory.forEach((val, idx) => {
+                if (val.name == productName && val.amount - amount > 0) {
+                    this.inventory[idx].amount -= amount;
+                } else {
+                    alert(`${val.name} has too little stock for your sale!`);
+                }
+            });
+        } else {
+            // Item is not currently in inventory
+            alert(`${productName} is sold out!`);
+        }
     }
 }
 
-class Person {
-    constructor(name, city) {
+class Item {
+    constructor(name) {
         this.name = name;
-        this.city = city;
+        this.amount = 0;
     }
 
-    greet() {
-        console.log("Hello World!");
-    }
-}
-
-let ben = new Person("Ben", "Hoover");
-ben.greet();
-
-class Coder extends Person {
-    constructor(name, city, favLang) {
-        super(name, city);
-        this.favLang = favLang;
+    increment(num) {
+        this.amount += num;
     }
 
-    greet() {
-        console.log("Coding World!");
-    }
-
-    code(msg) {
-        return msg
-            .split("")
-            .map((l, idx) => msg.charCodeAt(idx).toString(2))
-            .join(" ");
+    decrement(num) {
+        this.amount -= num;
     }
 }
 
-let bryantellius = new Coder(
-    "Bryantellius",
-    "The Grand Exchange",
-    "JavaScript"
-);
-console.log(bryantellius.code("Hello World!"));
+let piggleWiggly = new Store("Piggly Wiggly");
+
+let productName = prompt("Product to Stock:");
+let productAmount = parseInt(prompt("Amount to Stock:"));
+
+piggleWiggly.stock(productName, productAmount);

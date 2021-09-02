@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="numberguesserp1.js" defer></script>
+        <script src="../../../prism/prism.js" defer></script>
+        <link rel="stylesheet" href="../../../prism/prism.css" />
+        <link rel="stylesheet" href="../index.css" />
+        <title>Number Guessing Game Part 1 | TrueCoders</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-half">
+                <img
+                    class="logo"
+                    src="../../../assets/TCLogoOnly.png"
+                    alt="TrueCoders' Company Logo"
+                />
+                <ul class="sidenav">
+                    <li>
+                        <a href="../objects/objects.html">Objects</a>
+                    </li>
+                    <li>
+                        <a href="../kitchen-sink/kitchen-sink.html"
+                            >Kitchen Sink Lab</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../hof/hof.html">Higher-Order Functions</a>
+                    </li>
+                    <li>
+                        <a href="../oop/oop.html"
+                            >Object Oriented Programming</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../numberguesserp1/numberguesserp1.html"
+                            >Number Guessing P1</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="container-half">
+                <div class="p-3 fit-content">
+                    <h1>Number Guessing Game Part 1</h1>
+                    <p>
+                        View the output in the DevTools Console by pressing
+                        <kbd>Fn + F12</kbd>, or right click and 'inspect the
+                        page'.
+                    </p>
+                    <hr />
+                    <h2>Steps</h2>
+                    <p>
+                        Initialize an integer to represent a favorite number and
+                        assign a value with a number of your choosing or you can
+                        assign a random number to this variable:
+                    </p>
+                    <pre>
+                        <code class="language-js"
+                            >let rand = Math.floor(Math.random() * 100) + 1;</code
+                        >
+                    </pre>
+                    <ul>
+                        <li>
+                            Use `prompt()` to ask the user to input a number,
+                            and store the result in a variable
+                        </li>
+                        <li>
+                            Create an if-statement that if the guessed number is
+                            below the initial value, print out “too low”.
+                        </li>
+                        <li>
+                            Create an else-if statement that if the number is
+                            higher than the initial value, print out “too high”.
+                        </li>
+                        <li>
+                            Create an else statement that prints out
+                            “Congratulations!!!”.
+                        </li>
+                    </ul>
+                    <p>
+                        Wait.. We already did this. Yes! But this isn’t as good
+                        as it could be. We need to make this number guessing
+                        game playable until the user guesses the correct number.
+                    </p>
+                    <p>
+                        You are required to use a selection statement, loop, and
+                        at least one function. After you reach the required
+                        functionality, think of ways you could improve the game.
+                    </p>
+                    <h3>Bonus 1</h3>
+                    <p>
+                        Refactor your guessing game to be playable until a
+                        correct answer, without using a loop.
+                    </p>
+                    <h3>Bonus 2</h3>
+                    <p>
+                        Integers? Boring. Allow for decimals. Let’s say the
+                        limit is the one-hundredth decimal place.
+                    </p>
+                    <h3>Bonus 3</h3>
+                    <p>
+                        It’s not just a number. The user is guessing an rgb
+                        value (0-255). If you’re feeling adventurous, refactor
+                        your code to change the game. Be creative, there are no
+                        additional requirements.
+                    </p>
+                    <!-- More Content Here -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

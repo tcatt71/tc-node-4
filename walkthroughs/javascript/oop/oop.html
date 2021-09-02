@@ -46,6 +46,45 @@
                         page'.
                     </p>
                     <hr />
+                    <h2>Object Constructors</h2>
+                    <pre><code class="language-js">
+                        let game = {
+                            home: undefined,
+                            away: undefined,
+                            score: {
+                                home: 0,
+                                away: 0,
+                            },
+                            playGame: function () {
+                                console.log(
+                                    `The ${this.away.city} ${this.away.name} is playing at the ${this.home.city} ${this.home.name}...`
+                                );
+                            },
+                        };
+                        
+                        function Game(home, away) {
+                            let obj = Object.create(game);
+                            obj.home = home;
+                            obj.away = away;
+                            return obj;
+                        }
+
+                        let game1 = new Game(trailblazers, 76ers);
+                    </code></pre>
+                    <hr />
+                    <h2>Class Notation Syntax:</h2>
+                    <pre><code class="language-js">
+                        class Person {
+                            constructor(name, city) {
+                                this.name = name;
+                                this.city = city;
+                            }
+                        
+                            greet() {
+                                console.log("Hello World!");
+                            }
+                        }
+                    </code></pre>
                     <!-- More Content Here -->
                 </div>
             </div>
