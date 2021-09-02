@@ -1,0 +1,29 @@
+.nav-link {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.red {
+  color: red;
+}
+
+#container {
+  width: 250px;
+  height: 250px;
+  background: lightblue;
+  position: relative;
+}
+#box {
+  width: 75px;
+  height: 75px;
+  background: burlywood;
+  position: absolute;
+  left: 0px;
+  animation: move 2s ease-in-out;
+}
+
+@keyframes move {
+  100% {
+    left: 175px;
+  }
+}

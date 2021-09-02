@@ -31,14 +31,21 @@ class NumberGuesser {
     this.modes = ["easy", "medium", "hard"];
     this.isPlaying = false;
     this.correctNumber = null;
+
+    console.log(this);
   }
 
   startGame() {
     this.isPlaying = true;
+
     if (this.whosPlaying()) {
       return;
     }
-    this.decideMode();
+
+    if (this.decideMode()) {
+      return;
+    }
+
     this.correctNumber = Math.floor(Math.random() * this.limit[this.mode]) + 1;
     this.playGame();
   }
@@ -65,7 +72,7 @@ class NumberGuesser {
       this.currentPlayer = foundPlayer;
     } else {
       let temp = new Player(name);
-      this.players.push(new Player(name));
+      this.players.push(temp);
       this.currentPlayer = temp;
     }
     this.displayPlayers();
@@ -134,7 +141,10 @@ class NumberGuesser {
     this.mode = prompt(
       "Select difficulty (type easy, medium, or hard):\nType quit to stop."
     );
-    this.hasQuit(this.mode);
+
+    if (this.hasQuit(this.mode)) {
+      return true;
+    }
 
     if (this.isPlaying && !this.modes.includes(this.mode)) {
       this.decideMode();
