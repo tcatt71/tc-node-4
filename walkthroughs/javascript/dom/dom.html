@@ -1,21 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
-    <meta content="utf-8" />
-    <meta content="viewpoint" />
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dom.css" />
-    <script src="dom.js" defer></script>
+    <script src="oop.js" defer></script>
+    <script src="../../../prism/prism.js" defer></script>
+    <link rel="stylesheet" href="../../../prism/prism.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>Document Object Model (DOM) | TrueCoders</title>
   </head>
   <body>
-    <!-- Elements to be displayed -->
-    <main id="main">
-      <div id="container">
-        <div id="box"></div>
+    <div class="container">
+      <div class="container-half">
+        <img
+          class="logo"
+          src="../../../assets/TCLogoOnly.png"
+          alt="TrueCoders' Company Logo"
+        />
+        <ul class="sidenav">
+          <li>
+            <a href="../objects/objects.html">Objects</a>
+          </li>
+          <li>
+            <a href="../kitchen-sink/kitchen-sink.html">Kitchen Sink Lab</a>
+          </li>
+          <li>
+            <a href="../hof/hof.html">Higher-Order Functions</a>
+          </li>
+          <li>
+            <a href="../oop/oop.html">Object Oriented Programming</a>
+          </li>
+          <li>
+            <a href="../dom/dom.html">Document Object Model</a>
+          </li>
+        </ul>
       </div>
-    </main>
+      <div class="container-half">
+        <div class="p-3 fit-content">
+          <h1>Document Object Model (DOM)</h1>
+          <p>
+            View the output in the DevTools Console by pressing
+            <kbd>Fn + F12</kbd>, or right click and 'inspect the page'.
+          </p>
+          <hr />
+          <h2>HTML Elements Represented As JS Objects</h2>
+          <p>
+            The <strong>Document Object Model</strong> is a way of representing
+            all html elements as JavaScript objects.
+          </p>
+          <p>That means that the following p tag,</p>
+          <pre><code class="language-html">
+            &lt;p id="paragraph1" class="p-text"&gt;Lorem ipsum...&lt;/p&gt;
+          </code></pre>
+          <p>is represented as the following in JS:</p>
+          <pre><code class="language-js">
+            {
+              id: "paragraph1",
+              className: "p-text",
+              ...
+            }
+          </code></pre>
+          <p>
+            That pretty useful. Now we can manipulate the p tag's id and
+            classnames via JavaScript. But that's not all. All attribute
+            <strong>name/value</strong> pairs for html elements are represented
+            as <strong>property/value</strong>
+            pairs in their object representations. Along with attributes, we now
+            can listen and respond to user events on certain elements to add
+            dynammic features to our webpages.
+          </p>
+          <hr />
+          <h2>Selecting Elements</h2>
+          <p>
+            There are several way to select elements with javascript
+            <code class="language-js">document</code> methods. The method names
+            are fairly self-explanatory, but how many elements they select may
+            not be. An easy way to remember is that if the method name includes
+            'elements' plural, you will receive a
+            <strong>HTMLCollection</strong> (array-like, meaning more than one
+            element if exists). Otherwise you are selecting a single document
+            object. For example:
+          </p>
+          <ul>
+            <li>
+              <code class="language-js">document.getElementById("id")</code>
+            </li>
+            <li>
+              <code class="language-js"
+                >document.getElementsByClassName("classname")</code
+              >
+            </li>
+            <li>
+              <code class="language-js"
+                >document.getElementsByTagName("tagname")</code
+              >
+            </li>
+            <li>
+              <code class="language-js"
+                >document.querySelector("css selector")</code
+              >
+            </li>
+            <li>
+              <code class="language-js"
+                >document.querySelectorAll("css selector")</code
+              >
+            </li>
+          </ul>
+          <p>
+            To select an <code class="language-js">&lt;h1&gt;</code> from the
+            document,
+          </p>
+          <pre><code class="language-html">
+            &lt;h1 id="heading"&gt;Of Beginnings and the Names of Things&lt;/h1&gt;
+          </code></pre>
+          <p>you would use the following javascript code:</p>
+          <pre><code class="language-js">
+            let heading = document.getElementById("heading");
+          </code></pre>
+          <!-- More Content Here -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>
