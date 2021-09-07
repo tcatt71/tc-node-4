@@ -1,50 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="numberguessingp1oop.js" defer></script>
-        <script src="../../../prism/prism.js" defer></script>
-        <link rel="stylesheet" href="../../../prism/prism.css" />
-        <link rel="stylesheet" href="../index.css" />
-        <title>Number Guessing Game Part 1 | TrueCoders</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="container-half">
-                <img
-                    class="logo"
-                    src="../../../assets/TCLogoOnly.png"
-                    alt="TrueCoders' Company Logo"
-                />
-                <ul class="sidenav">
-                    <li>
-                        <a href="../objects/objects.html">Objects</a>
-                    </li>
-                    <li>
-                        <a href="../kitchen-sink/kitchen-sink.html"
-                            >Kitchen Sink Lab</a
-                        >
-                    </li>
-                    <li>
-                        <a href="../hof/hof.html">Higher-Order Functions</a>
-                    </li>
-                    <li>
-                        <a href="../oop/oop.html"
-                            >Object Oriented Programming</a
-                        >
-                    </li>
-                    <li>
-                        <a href="../numberguesserp1/numberguesserp1.html"
-                            >Number Guessing P1</a
-                        >
-                    </li>
-                </ul>
-            </div>
-            <div class="container-half">
-                <div class="p-3 fit-content">
-                    <h1>Number Guessing Game Part 1</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="numberguessingp1oop.js" defer></script>
+    <script src="../../../prism/prism.js" defer></script>
+    <link rel="stylesheet" href="../../../prism/prism.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>Number Guessing Game Part 1 | TrueCoders</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-half">
+        <img
+          class="logo"
+          src="../../../assets/TCLogoOnly.png"
+          alt="TrueCoders' Company Logo"
+        />
+        <ul class="sidenav">
+          <li>
+            <a href="../objects/objects.html">Objects</a>
+          </li>
+          <li>
+            <a href="../kitchen-sink/kitchen-sink.html">Kitchen Sink Lab</a>
+          </li>
+          <li>
+            <a href="../hof/hof.html">Higher-Order Functions</a>
+          </li>
+          <li>
+            <a href="../oop/oop.html">Object Oriented Programming</a>
+          </li>
+          <li>
+            <a href="../numberguesserp1/numberguesserp1.html"
+              >Number Guessing P1</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="container-half">
+        <div class="p-3 fit-content">
+          <h1>Number Guessing Game</h1>
+          <p id="prompt">
+            Welcome! To start, enter your name and select the difficulty:
+          </p>
+          <p id="feedback">-</p>
+          <p id="guesses">-</p>
+          <form id="guessForm">
+            <input
+              type="text"
+              name="guess"
+              id="guessInput"
+              placeholder="Jane"
+              required
+            />
+            <select name="mode" id="modeSelect">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+            <button id="submitBtn">Start</button>
+          </form>
+          <hr />
+          <button id="resetBtn">Reset</button>
+          <hr />
+          <h2>Scores</h2>
+          <button id="easyBtn">Easy</button
+          ><button id="mediumBtn">Medium</button
+          ><button id="hardBtn">Hard</button>
+          <div id="scoreContainer"></div>
+          <!-- <h1>Number Guessing Game Part 1</h1>
                     <p>
                         View the output in the DevTools Console by pressing
                         <kbd>Fn + F12</kbd>, or right click and 'inspect the
@@ -106,10 +131,10 @@
                         value (0-255). If you’re feeling adventurous, refactor
                         your code to change the game. Be creative, there are no
                         additional requirements.
-                    </p>
-                    <!-- More Content Here -->
-                </div>
-            </div>
+                    </p> -->
+          <!-- More Content Here -->
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
