@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises</title>
+    <link rel="stylesheet" href="promises.css" />
+    <script src="promises.js" defer></script>
+    <script src="exercise.js" defer></script>
+  </head>
+  <body>
+    <div
+      class="d-flex justify-content-center align-items-center h-100 bg-lizzy"
+    >
+      <h3 id="feedback" class="d-none alert"></h3>
+      <form class="card">
+        <div class="formGroup">
+          <h1>Login</h1>
+          <hr>
+          <label for="email">Email</label
+          ><input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="name@domain.com"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="pass">Password</label
+          ><input
+            placeholder="**********"
+            type="password"
+            name="pass"
+            id="pass"
+          />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <main class="d-none card">
+        <h1>Dashboard</h1>
+        <h2></h2>
+        <hr />
+        <div>Posts...</div>
+      </main>
+    </div>
+  </body>
+</html>
