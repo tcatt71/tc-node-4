@@ -4,7 +4,7 @@ class DisconnectError extends Error {
   }
 }
 
-async function watchTurorial() {
+async function watchTutorial() {
   let userWatchingLiveStream = Math.round(Math.random());
 
   if (userWatchingLiveStream) {
@@ -14,7 +14,7 @@ async function watchTurorial() {
   }
 }
 
-watchTurorial()
+watchTutorial()
   .then((message) => {
     console.log(message);
   })

@@ -1,0 +1,30 @@
+{
+  "coord": { "lon": -86.8114, "lat": 33.4054 },
+  "weather": [
+    { "id": 800, "main": "Clear", "description": "clear sky", "icon": "01d" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 302.89,
+    "feels_like": 308.26,
+    "temp_min": 300.93,
+    "temp_max": 304.32,
+    "pressure": 1005,
+    "humidity": 73
+  },
+  "visibility": 10000,
+  "wind": { "speed": 1.54, "deg": 0 },
+  "clouds": { "all": 1 },
+  "dt": 1631125622,
+  "sys": {
+    "type": 2,
+    "id": 2007706,
+    "country": "US",
+    "sunrise": 1631100382,
+    "sunset": 1631145819
+  },
+  "timezone": -18000,
+  "id": 4067994,
+  "name": "Hoover",
+  "cod": 200
+}

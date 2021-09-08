@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="apis.js" defer></script>
+    <script src="../../../prism/prism.js" defer></script>
+    <link rel="stylesheet" href="../../../prism/prism.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>Fetch API</title>
+    <style>
+      .d-none {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-half">
+        <img
+          class="logo"
+          src="../../../assets/TCLogoOnly.png"
+          alt="TrueCoders' Company Logo"
+        />
+        <ul class="sidenav">
+          <li><a href="../hof/hof.html">HOF</a></li>
+          <li><a href="../oop/oop.html">OOP</a></li>
+          <li>
+            <a href="../numberguesserp1/numberguesserp1.html"
+              >Number Guessing Game</a
+            >
+          </li>
+          <li><a href="../promises/promises.html">Promises</a></li>
+          <li><a href="../apis/apis.html">Fetch Api</a></li>
+        </ul>
+      </div>
+      <div class="container-half">
+        <div class="p-3 fit-content">
+          <h1>APIs</h1>
+          <p>
+            Servers that are created for serving data for external use (in
+            websites or apps) are often referred to as
+            <strong>Application Programming Interfaces</strong>, or
+            <strong>APIs</strong>.
+          </p>
+          <hr />
+          <h2>Fetch API</h2>
+          <p>Syntax:</p>
+          <pre><code class="language-js">
+            fetch("url")
+                .then((response) => // handle response)
+                .catch((error) => // handle error)
+          </code></pre>
+          <hr />
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search for a gif..."
+          />
+          <button id="submitBtn">Search</button>
+          <div class="imgContainer d-none">
+            <img src="#" alt="Can't Load Image" id="gif" />
+            <button id="share">Share</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
