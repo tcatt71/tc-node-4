@@ -5,7 +5,7 @@ fetch("https://ghibliapi.herokuapp.com/films")
     let ol = document.querySelector("#filmsList");
     data.forEach((film) => {
       let li = document.createElement("li");
-      li.innerHTML = `<h3>${film.title}</h3><small>${film.release_date}</small><p>${film.description}</p>`;
+      li.innerHTML = `<h3>${film.title}</h3><small>${film.director}</small><p>${film.description}</p>`;
       ol.appendChild(li);
     });
   })
