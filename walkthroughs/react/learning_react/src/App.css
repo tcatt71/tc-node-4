@@ -7,6 +7,35 @@
   pointer-events: none;
 }
 
+.collectives {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.collectives > h3 {
+  border-radius: 5px;
+  background-color: #0094c8;
+  color: white;
+  padding: 1rem;
+}
+
+.wavy {
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.user-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,5 +63,19 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 50px;
+  height: 12px;
+  background: radial-gradient(circle closest-side, currentColor 90%, #0000) 0 0/33%
+    100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: loading 1s steps(4) infinite;
+}
+@keyframes loading {
+  to {
+    clip-path: inset(0 -34% 0 0);
   }
 }

@@ -1,54 +1,40 @@
-import { Component } from "react";
-import Button from "./components/Button";
+import { useState } from "react";
+import List from "./components/List";
 import "./App.css";
 
-class App extends Component {
-  constructor() {
-    super();
+const App = () => {
+  const [list, setList] = useState([]);
 
-    this.buttonUnits = [-10, -5, -1, 1, 5, 10];
-    this.state = {
-      title: "Change Me",
-      count: 0,
-    };
+  const addTask = (e) => {
+    e.preventDefault();
+    let input = document.querySelector("#task");
+    let select = document.querySelector("#priority");
+    let tempList = [...list, { content: input.value, priority: select.value }];
+    setList(tempList);
+  };
 
-    this.handleClick = this.handleClick.bind(this);
-    this.handleInput = this.handleInput.bind(this);
-  }
-
-  handleClick(unit) {
-    this.setState({ count: this.state.count + unit });
-  }
-
-  handleInput(event) {
-    this.setState({ title: event.target.value });
-  }
-
-  render() {
-    console.log("App - Render");
-
-    return (
-      <div className="App">
-        <div>
-          <h1>{this.state.title}</h1>
-          <h2>Count: {this.state.count}</h2>
-        </div>
-        <div>
-          <input
-            type="text"
-            name="title"
-            id="title"
-            onChange={this.handleInput}
-          />
-        </div>
-        <div className="btn-group">
-          {this.buttonUnits.map((unit, idx) => (
-            <Button key={idx} unit={unit} handleClick={this.handleClick} />
-          ))}
-        </div>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="App">
+      <form onSubmit={addTask}>
+        <label htmlFor="task">New Task:</label>
+        <input
+          type="text"
+          name="task"
+          id="task"
+          placeholder="Take out the trash..."
+        />
+        <select name="priority" id="priority">
+          <option value=""></option>
+          <option value="!">!</option>
+          <option value="!!">!!</option>
+          <option value="!!!">!!!</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+      <hr />
+      <List type="ol" list={list} />
+    </div>
+  );
+};
 
 export default App;
